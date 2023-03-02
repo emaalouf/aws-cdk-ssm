@@ -14,14 +14,14 @@ export class CdkStarterStack extends cdk.Stack {
       allowedPattern: ".*",
     });
 
-    const environmentsParam = new ssm.StringListParameter(
-      this,
-      "environments-param",
-      {
-        parameterName: "/my-site/environments",
-        stringListValue: ["dev", "test", "prod"],
-        tier: ssm.ParameterTier.ADVANCED,
-      }
-    );
+//     const environmentsParam = new ssm.StringListParameter(
+//       this,
+//       "environments-param",
+//       {
+//         parameterName: "/my-site/environments",
+//         stringListValue: ["dev", "test", "prod"],
+//         tier: ssm.ParameterTier.ADVANCED,
+//       }
+//     );
   }
 }
