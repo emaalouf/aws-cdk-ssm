@@ -23,7 +23,7 @@ export class TaskStack extends cdk.Stack {
       {
         functionName: "GetSSMLambdafunction",
         runtime: lambda.Runtime.NODEJS_16_X,
-        handler: "createTasks",
+        handler: "GetSSM",
         entry: path.join(__dirname, "../controllers/taskController.ts"),
         initialPolicy: [
           new iam.PolicyStatement({
